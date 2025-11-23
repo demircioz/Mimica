@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.94 457.41">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #f9b233;
+        font-family: Gotham-UltraItalic, 'Gotham Ultra';
+        font-size: 70px;
+        font-style: italic;
+      }
+
+      .cls-3 {
+        fill: #1d1d1b;
+        font-family: Bauhaus93, 'Bauhaus 93';
+        font-size: 125px;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(836.11 338.68)"><tspan x="0" y="0">MiMiLab</tspan></text>
+  <text class="cls-2" transform="translate(927.97 392.93)"><tspan x="0" y="0">P</tspan><tspan class="cls-1" x="46.55" y="0">r</tspan><tspan x="77.77" y="0">emium+</tspan></text>
+  <text/>
+  <text/>
+</svg>

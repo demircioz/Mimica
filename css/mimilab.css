@@ -1,0 +1,208 @@
+/* Corps de la page */
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Empêche les débordements pendant l'animation */
+    animation: fadeIn 1s ease; 
+}
+
+/* Animation d'ouverture */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Conteneur principal */
+.maintenance-container {
+    max-width: 800px;
+    width: 90%; 
+    padding: 40px 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    margin: 20px; 
+    animation: slideIn 1s ease; 
+}
+
+/* Animation de glissement du conteneur */
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Titre animé (Machine à écrire) */
+.maintenance-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: 2px solid #1a1a1a; 
+    animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+    margin: 0 auto; 
+    display: inline-block;
+    text-align: center;
+    width: 100%; 
+}
+
+/* Animation de machine à écrire */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Animation du curseur clignotant */
+@keyframes blink-caret {
+    from {
+        border-right-color: #1a1a1a;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Animation maintenance */
+.maintenance-animation {
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Message de maintenance */
+.maintenance-message {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px; 
+}
+
+/* Bouton retour à l'accueil */
+.back-to-home-btn {
+    display: inline-block;
+    padding: 12px 24px; 
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: bounce 2s infinite; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-home-btn:hover {
+    background-color: #333;
+    transform: scale(1.05); 
+}
+
+/* Animation de flottement */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Ajustement pour petits écrans */
+@media (max-width: 768px) {
+    .maintenance-container {
+        width: 95%; 
+    }
+
+    .maintenance-title {
+        font-size: 2rem;
+    }
+
+    .maintenance-message {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .back-to-home-btn {
+        font-size: 0.9rem; 
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .maintenance-container {
+        padding: 15px; 
+    }
+
+    .maintenance-title {
+        font-size: 1.5rem;
+    }
+
+    .maintenance-message {
+        font-size: 0.9rem;
+    }
+
+    .back-to-home-btn {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
+
+
+
+/* Conteneur pour les particules */
+.background-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Derrière tout le contenu */
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.background-particles::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0) 80%, rgba(0,0,0,0.05));
+    animation: particles 15s linear infinite;
+}
+
+/* Animation de mouvement */
+@keyframes particles {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

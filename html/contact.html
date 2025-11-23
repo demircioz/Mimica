@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mimica </title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../media/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../media/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../media/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../media/favicon/site.webmanifest" />
+    </head>
+<body>
+    <header>
+      <div class="container">
+          <button class="hamburger" id="hamburger-menu" aria-label="Menu Hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+          <a href="../index.html" class="logo">
+              <img src="../media/logo.svg" alt="Mimica Logo">
+          </a>
+          <nav class="mobile-nav" id="mobile-nav">
+              <ul class="nav-links">
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle">À Propos</a>
+                      <ul class="dropdown-submenu" id="submenu-apropos">
+                          <li><a href="../html/qui-sommes-nous.html">Qui sommes-nous</a></li>
+                          <li><a href="../html/fondateurs.html">Les fondateurs</a></li>
+                          <li><a href="../html/faq.html">FAQ</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="../html/actualites.html">Actualités</a></li>
+                  <li><a href="../html/contact.html">Contact</a></li>
+                  <li><a href="../html/produits.html">Produits</a></li>
+                  <li><a href="../html/abonnements.html">Abonnements</a></li>
+                  <li><a href="../html/partenaires.html">Partenaires</a></li>
+                  <li><a href="../html/mimilab.html">MimiLab</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+    <button id="back-to-top" title="Retour en haut">&#8679;</button>
+    <div id="newsletter-popup" class="popup">
+        <p>Merci ! Votre inscription à la newsletter a bien été prise en compte.</p>
+    </div>
+
+  <main class="contact-container">
+    <form id="contact-form">
+      <h2>Envoyez-nous un message</h2>
+      <p class="note">Pour toute candidature, merci d'utiliser la <a href="./nous-recrutons.html">page dédiée</a>.</p>
+      <div class="form-group">
+        <label for="name">Nom<span class="required">*</span> :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email<span class="required">*</span> :</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Téléphone :</label>
+        <input type="text" id="phone" name="phone" placeholder="Votre numéro de téléphone" maxlength="10" pattern="[0-9]*" inputmode="numeric">
+      </div>
+      <div class="form-group">
+        <label for="order-number">Numéro de commande :</label>
+        <input type="text" id="order-number" name="order-number" placeholder="Numéro de commande (facultatif)" maxlength="12">
+      </div>      
+      <div class="form-group">
+        <label for="subject">Objet<span class="required">*</span> :</label>
+        <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message<span class="required">*</span> :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message ici" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit"><strong> Envoyer </strong></button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Contactez-nous</h2>
+      <p>Pour toute question, n'hésitez pas à nous écrire ou à nous appeler.</p>
+      <p><strong>Horaires d'ouverture :</strong><br> De 8h à 18h, du lundi au vendredi.</p>
+      <div class="info-box">
+        <div class="info-item">
+          <img src="../media/icones/adresse.svg" alt="Adresse Icon">
+          <p>Route d'Hurtault, 77300 Fontainebleau</p>
+        </div>
+        <div class="info-item">
+          <img src="../media/icones/tel.png" alt="Téléphone Icon">
+          <p>+33 1 23 45 67 89</p>
+        </div>
+        <div class="info-item">
+          <img src="../media/icones/mail.svg" alt="Mail Icon">
+          <p><a href="mailto:contact@mimica.com">contact@mimica.com</a></p>
+        </div>
+      </div>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1011.560610371953!2d2.6864360866067716!3d48.39810225296617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5f482d85b7b99%3A0x25ca8642ba306cfc!2sIUT%20S%C3%A9nart-Fontainebleau!5e0!3m2!1sfr!2sfr!4v1737080644369!5m2!1sfr!2sfr"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="social-links">
+        <h3>Suivez-nous :</h3>
+        <div class="social-icons">
+          <a href="https://x.com/Mimica__fr"><img src="../media/icones/x.svg" alt="X"></a>
+          <a href="https://www.instagram.com/mimica_fr/"><img src="../media/icones/instagram.svg" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/"><img src="../media/icones/linkedin.svg" alt="LinkedIn"></a>
+          <a href="https://grond.iut-fbleau.fr/demircio"><img src="../media/icones/github.svg" alt="GitHub"></a>
+          <a href="https://www.tiktok.com/@mimica.fr"><img src="../media/icones/tiktok.svg" alt="TikTok"></a>
+          <a href="https://www.youtube.com/channel/UC6xe8fh88vLrWExz-VaL61A"><img src="../media/icones/youtube.svg" alt="YouTube"></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Colonne 1 : Nous recrutons -->
+      <div class="footer-column">
+        <h4><a href="../html/nous-recrutons.html" class="recrutement-link">Nous recrutons</a></h4>
+        <p>Rejoignez Mimica et contribuez à révolutionner l’apprentissage manuel avec nos solutions innovantes. Nous mettons un point d’honneur à promouvoir l’égalité des chances et le respect de l’environnement.</p>
+        <p><em>- Équipe Mimica</em></p>
+      </div>
+  
+      <!-- Colonne 2 : Restez Connectés -->
+      <div class="footer-column">
+        <h4>Restez Connectés</h4>
+        <div class="social-links-grid">
+          <a href="https://x.com/Mimica__fr"><img src="../media/icones/x.svg" alt="X"><span>X</span></a>
+          <a href="https://www.instagram.com/mimica_fr/"><img src="../media/icones/instagram.svg" alt="Instagram"><span>Instagram</span></a>
+          <a href="https://www.linkedin.com/"><img src="../media/icones/linkedin.svg" alt="LinkedIn"><span>LinkedIn</span></a>
+          <a href="https://grond.iut-fbleau.fr/demircio"><img src="../media/icones/github.svg" alt="GitHub"><span>GitHub</span></a>
+          <a href="https://www.tiktok.com/@mimica.fr"><img src="../media/icones/tiktok.svg" alt="TikTok"><span>TikTok</span></a>
+          <a href="https://www.youtube.com/channel/UC6xe8fh88vLrWExz-VaL61A"><img src="../media/icones/youtube.svg" alt="YouTube"><span>YouTube</span></a>
+        </div>
+      </div>
+  
+      <!-- Colonne 3 : Coordonnées -->
+      <div class="footer-column">
+        <h4>Coordonnées</h4>
+        <p><img src="../media/icones/adresse.svg" alt="Adresse"><span>Route d'Hurtault, 77300 Fontainebleau</span></p>
+        <p><img src="../media/icones/tel.png" alt="Téléphone"><span>+33 1 23 45 67 89</span></p>
+        <p><img src="../media/icones/mail.svg" alt="Email">
+          <span><a href="mailto:contact@mimica.com">contact@mimica.com</a></span>
+        </p>
+      </div>
+    </div>
+  
+    <!-- Section Newsletter -->
+    <div class="newsletter-bar">
+      <div class="newsletter-bar-container">
+        <h4>Inscrivez-vous à notre Newsletter !</h4>
+        <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités concernant nos recherches, les offres d'emploi, nos produits et pour des offres exclusives.</p>
+        <form id="newsletter-bar-form">
+          <div class="newsletter-bar-input">
+            <input type="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+            <button type="submit" class="newsletter-bar-button">S'inscrire</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Section Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2025 : Mimica. Tous droits réservés | Projet Étudiant : Canpolat DEMIRCI--ÖZMEN, Théo ANASTASIO, Mathys POTIER </p>
+      <p><a href="../html/mentions-legales.html">Mentions légales</a> | <a href="../html/plan-du-site.html">Plan du site</a> | <a href="https://www.behance.net/gallery/217097583/Mimica">Charte graphique</a></p>
+    </div>
+  </footer>
+  <script src="../js/contact.js"></script>
+</body>
+</html>
